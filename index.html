@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejemplo - Página de inicio</title>
+  <meta name="description" content="Página de ejemplo con estilos CSS básicos.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Mi Sitio</a>
+      <nav class="main-nav">
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Bienvenido a mi sitio</h1>
+        <p>Este es un ejemplo de `index.html` enlazado con `styles.css`. Está pensado para servir como plantilla básica y punto de partida.</p>
+        <p><a class="btn" href="#">Comenzar</a></p>
+      </div>
+    </section>
+
+    <section class="container cards">
+      <article class="card">
+        <h2>Tarjeta 1</h2>
+        <p>Descripción breve de la tarjeta número uno. Usa esta área para destacar una característica o servicio.</p>
+        <a class="btn btn-outline" href="#">Leer más</a>
+      </article>
+
+      <article class="card">
+        <h2>Tarjeta 2</h2>
+        <p>Otra descripción. Cambia el contenido según lo que necesites mostrar en tu sitio.</p>
+        <a class="btn btn-outline" href="#">Leer más</a>
+      </article>
+
+      <article class="card">
+        <h2>Tarjeta 3</h2>
+        <p>Usa esta sección para enlaces rápidos, llamadas a la acción o estadísticas.</p>
+        <a class="btn btn-outline" href="#">Leer más</a>
+      </article>
+    </section>
+
+    <section class="container form-section">
+      <h2>Contacto</h2>
+      <form class="simple-form">
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" placeholder="Tu nombre">
+
+        <label for="email">Correo</label>
+        <input id="email" name="email" type="email" placeholder="tu@ejemplo.com">
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mi Sitio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Añade el año actual automáticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
